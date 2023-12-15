@@ -1,11 +1,25 @@
+:root {
+    --background: #1e90ff;
+    --white: #ffffff;
+}
+
 .colors{
-    color: #05668D;
-    background-color: #028090;
+    background-color: #05668D;
+    color: #028090;
     border-color: #00A896;
 }
 
 
-ul{
+/*body{*/
+/*    background-color:var(--background)*/
+/*}*/
+
+
+
+
+
+
+.no-display *{
     list-style-type:none;
 }
 
@@ -14,7 +28,6 @@ li{
 }
 .section{
     margin: 20px;
-    width: 80%;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -39,4 +52,8 @@ li{
 .right{
     float: right;
     width: 30%;
+}
+
+#personal*{
+    margin:10px;
 }
