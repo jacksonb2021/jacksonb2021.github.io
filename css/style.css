@@ -1,22 +1,40 @@
+.colors{
+    color: #05668D;
+    background-color: #028090;
+    border-color: #00A896;
+}
+
+
 ul{
     list-style-type:none;
 }
 
 
 .section{
-    margin: 0 auto;
+    margin: 20px;
     width: 80%;
     padding: 30px;
-    background-color: rgb(33, 33, 33);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgb(33, 33, 33);
 }
 .section *{
     color: #fff;
+
 }
+
 
 .title{
     text-align: center;
     font-size: 2rem;
     margin-bottom: 10px;
+}
+.left{
+    float: left;
+    width: 40%;
+}
+
+.right{
+    float: right;
+    width: 30%;
 }
