@@ -42,7 +42,7 @@ li{
 
 }
 
-.section input, .section button{
+.section input, .section button, .section textarea{
     color:black;
     width:100%;
 
