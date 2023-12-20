@@ -17,6 +17,10 @@
 
 
 
+form *{
+    font-size:20px;
+}
+
 
 
 .no-display *{
@@ -37,6 +41,14 @@ li{
     color: #fff;
 
 }
+
+.section input, .section button{
+    color:black;
+    width:100%;
+
+}
+
+
 
 
 .title{
