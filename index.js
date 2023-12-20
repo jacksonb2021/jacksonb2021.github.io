@@ -9,8 +9,8 @@ function contactMe() {
 	let str = "name: " + name + "\nemail: " + email + "\nmessage: \n" + message;
 	Email.send({
 		Host: "smtp.elasticemail.com",
-		Username: "jacksonburns2021@gmail.com",
-		Password: "22F9A0E55B2A0DB37140C3951FE236EAC475",
+		Username: "jaxrules3@gmail.com",
+		Password: "05B19070362DFBDCCEF9C91B055BE85C6C9E",
 		To: "jacksonburns2021@gmail.com",
 		From: email,
 		Subject: subject,
