@@ -24,7 +24,7 @@ function contactMe() {
 }
 
 function aboutMe(){
-	let file = "aboutMe.txt";
+	let file = "aboutme.txt";
 	fetch(file)
 		.then(response => response.text())
 		.then(text => document.getElementById("aboutme").innerHTML = text)
