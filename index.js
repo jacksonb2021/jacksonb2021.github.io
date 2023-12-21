@@ -11,7 +11,7 @@ function contactMe() {
 		Host: "smtp.elasticemail.com",
 		Username: "jaxrules3@gmail.com",
 		Password: "05B19070362DFBDCCEF9C91B055BE85C6C9E",
-		To: "jacksonburns2021@gmail.com",
+		To: "jacksonb2021@arizona.edu",
 		From: email,
 		Subject: subject,
 		Body: str
