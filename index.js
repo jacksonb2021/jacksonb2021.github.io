@@ -17,6 +17,8 @@ function contactMe() {
 		Body: str
 	}).then(
 		message => alert("mail sent successfully")
+	).catch(
+		error => alert("Error sending email: ", error)
 	);
 
 }
