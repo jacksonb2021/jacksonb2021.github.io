@@ -3,4 +3,4 @@
 3. [x] finish about me
 4. [ ] photo gallery
 5. [ ] contact form - WIP
-6. [ ] new layout with tailwind CSS
+6. [ ] new layout
