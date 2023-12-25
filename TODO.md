@@ -8,6 +8,7 @@
        - humphreys over time (seasons)
     2. [ ] descriptions
     3. [ ] layout and design
+       - sanity.io
    4. [ ] featured section, then link to full gallery
    5. [ ] add more architecture photos from trips
 5. [ ] contact form - WIP
