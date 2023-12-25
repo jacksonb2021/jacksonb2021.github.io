@@ -4,4 +4,5 @@
 4. [ ] photo gallery
 5. [ ] contact form - WIP
 6. [ ] new layout
-7. [x] import from text
+7. [x] about me import from text
+8. [ ] skills resume
