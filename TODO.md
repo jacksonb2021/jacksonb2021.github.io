@@ -8,3 +8,4 @@
 8. [ ] skills resume
 9. [ ] new color scheme
 10. [ ] import resume/ projects from text file
+11. [ ] references
