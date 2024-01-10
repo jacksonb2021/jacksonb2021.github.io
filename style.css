@@ -3,6 +3,20 @@
     --white: #ffffff;
 }
 
+.collapsable{ /*button*/
+    cursor: pointer;
+    width:100%;
+    text-align:left;
+}
+
+.collapsablecontent{ /*body*/
+    display:none;
+    overflow:hidden;
+
+}
+
+
+
 .colors{
     background-color: #05668D;
     color: #028090;

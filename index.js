@@ -30,3 +30,14 @@ function aboutMe(){
 		.then(text => document.getElementById("aboutme").innerHTML = text)
 	
 }
+
+
+function collapsible(){
+	let collapsable  = document.getElementsByClassName("collapsable");
+	for(let i of collapsable){
+		i.addEventListener("click",function(){
+			this.classList.toggle("active");
+
+		})
+	}
+}
