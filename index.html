@@ -9,7 +9,7 @@
     <script src="index.js"></script>
 
 </head>
-<body class="colors">
+<body class="colors" onload="aboutMe()">
 
 <div class="container-fluid p-5">
 
@@ -222,38 +222,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<!--<script src="index.js"></script>-->
 
-<script>
-	function contactMe() {
-		let name = document.getElementById("name").value;
-		document.getElementById("name").value = "";
-		let email = document.getElementById("email").value;
-		document.getElementById("email").value = "";
-		let message = document.getElementById("body").value;
-		document.getElementById("body").value = "";
-		let subject = "Website Contact";
-		let str = `Name: ${name} <br/> Email: ${email} <br/> Message: <br/> ${message}`;
-		Email.send({
-			SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
-			To: "jacksonburns2021@gmail.com",
-			From: "jakie@maxblowers.dev",
-			Subject: subject,
-			Body: str
-		}).then(
-			message => {
-				if(message==="OK"){
-					alert("Email sent successfully")
-                }
-				else{
-					alert("Error sending message")
-					console.error(message)
-                }
-
-			}
-		)
-	}
-
-</script>
 </body>
 </html>

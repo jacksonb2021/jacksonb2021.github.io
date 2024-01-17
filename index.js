@@ -1,3 +1,31 @@
+function contactMe() {
+	let name = document.getElementById("name").value;
+	document.getElementById("name").value = "";
+	let email = document.getElementById("email").value;
+	document.getElementById("email").value = "";
+	let message = document.getElementById("body").value;
+	document.getElementById("body").value = "";
+	let subject = "Website Contact";
+	let str = `Name: ${name} <br/> Email: ${email} <br/> Message: <br/> ${message}`;
+	Email.send({
+		SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
+		To: "jacksonburns2021@gmail.com",
+		From: "jakie@maxblowers.dev",
+		Subject: subject,
+		Body: str
+	}).then(
+		message => {
+			if(message==="OK"){
+				alert("Email sent successfully")
+			}
+			else{
+				alert("Error sending message")
+				console.error(message)
+			}
+
+		}
+	)
+}
 
 
 function aboutMe(){
