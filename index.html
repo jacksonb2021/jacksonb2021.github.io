@@ -211,7 +211,7 @@
                 <div class="section card-body p-3 m-0">
                     <h4 class="text-center">Contact Me</h4>
                     <hr>
-                    <form onsubmit="contactMe(event);return false;">
+<!--                    <form onsubmit="contactMe();return false;">-->
                         <p class="text-lg-start m-1">Your Name</p>
                         <input class="rounded-2 form-control-lg" type="text" id="name" placeholder="Jackson Burns" required>
                         <br>
@@ -223,9 +223,9 @@
 
                         <br>
                         <div class="d-flex justify-content-center">
-                            <button class="rounded-3" type="submit">Submit</button>
+                            <button class="rounded-3" type="button" onclick="contactMe();">Submit</button>
                         </div>
-                    </form>
+<!--                    </form>-->
                 </div>
             </div>
 
@@ -241,37 +241,36 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!--<script src="index.js"></script>-->
 
-<!--<script>-->
-<!--	function contactMe() {-->
-<!--		let name = document.getElementById("name").value;-->
-<!--		document.getElementById("name").value = "";-->
-<!--		let email = document.getElementById("email").value;-->
-<!--		document.getElementById("email").value = "";-->
-<!--		let message = document.getElementById("body").value;-->
-<!--		document.getElementById("body").value = "";-->
-<!--		let subject = "Website Contact";-->
-<!--		let str = "name: " + name + "\nemail: " + email + "\nmessage: \n" + message;-->
-<!--		Email.send({-->
-<!--			Host: "smtp.elasticemail.com",-->
-<!--			Username: "jaxrules3@gmail.com",-->
-<!--			Password: "C1269DD79026D94D625935FF435AA4D4BEDB",-->
-<!--			To: "jacksonburns2021@gmail.com",-->
-<!--			From: "jaxrules3@gmail.com",-->
-<!--			Subject: subject,-->
-<!--			Body: str-->
-<!--		}).then(-->
-<!--			message => {-->
-<!--				if (message==="OK"){-->
-<!--					alert("message sent successfully")-->
-<!--				} else {-->
-<!--					alert(message)-->
-<!--                }-->
-<!--			}-->
-<!--		).catch(-->
-<!--			error => alert("Error sending email: ", error)-->
-<!--		);-->
+<script>
+	function contactMe() {
+		let name = document.getElementById("name").value;
+		document.getElementById("name").value = "";
+		let email = document.getElementById("email").value;
+		document.getElementById("email").value = "";
+		let message = document.getElementById("body").value;
+		document.getElementById("body").value = "";
+		let subject = "Website Contact";
+		let str = `Name: ${name} <br/> Email: ${email} <br/> Message: <br/> ${message}`;
+		Email.send({
+			SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
+			To: "jacksonburns2021@gmail.com",
+			From: "jakie@maxblowers.dev",
+			Subject: subject,
+			Body: str
+		}).then(
+			message => {
+				if(message==="OK"){
+					alert("Email sent successfully")
+                }
+				else{
+					alert("Error sending message")
+					console.error(message)
+                }
 
-<!--	}-->
-<!--</script>-->
+			}
+		)
+	}
+
+</script>
 </body>
 </html>
