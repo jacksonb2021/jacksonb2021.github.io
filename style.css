@@ -3,10 +3,18 @@
     --white: #ffffff;
 }
 
-.collapsable{ /*button*/
+.collapsablebutton{ /*button*/
     cursor: pointer;
     width:100%;
-    text-align:left;
+    text-align:center;
+    color: #444;
+    background-color:#eee;
+    border-radius:15px;
+    font-size:20px;
+
+}
+.active, .collapsiblebutton:hover {
+    background-color: #ccc;
 }
 
 .collapsablecontent{ /*body*/

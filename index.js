@@ -33,11 +33,23 @@ function aboutMe(){
 
 
 function collapsible(){
-	let collapsable  = document.getElementsByClassName("collapsable");
+	let collapsable  = document.getElementsByClassName("collapsablebutton");
 	for(let i of collapsable){
 		i.addEventListener("click",function(){
 			this.classList.toggle("active");
+			let content = this.nextElementSibling;
+			if(content.style.display==="block"){
+				content.style.display="none";
 
-		})
+			} else{
+				content.style.display="block";
+			}
+
+		});
 	}
 }
+
+window.addEventListener("load", myInit, true); function myInit(){
+	collapsible();
+	aboutMe();
+};
