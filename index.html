@@ -224,37 +224,37 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!--<script src="index.js"></script>-->
 
-<script>
-	function contactMe() {
-		let name = document.getElementById("name").value;
-		document.getElementById("name").value = "";
-		let email = document.getElementById("email").value;
-		document.getElementById("email").value = "";
-		let message = document.getElementById("body").value;
-		document.getElementById("body").value = "";
-		let subject = "Website Contact";
-		let str = "name: " + name + "\nemail: " + email + "\nmessage: \n" + message;
-		Email.send({
-			Host: "smtp.elasticemail.com",
-			Username: "jaxrules3@gmail.com",
-			Password: "C1269DD79026D94D625935FF435AA4D4BEDB",
-			To: "jacksonburns2021@gmail.com",
-			From: "jaxrules3@gmail.com",
-			Subject: subject,
-			Body: str
-		}).then(
-			message => {
-				if (message==="OK"){
-					alert("message sent successfully")
-				} else {
-					alert(message)
-                }
-			}
-		).catch(
-			error => alert("Error sending email: ", error)
-		);
+<!--<script>-->
+<!--	function contactMe() {-->
+<!--		let name = document.getElementById("name").value;-->
+<!--		document.getElementById("name").value = "";-->
+<!--		let email = document.getElementById("email").value;-->
+<!--		document.getElementById("email").value = "";-->
+<!--		let message = document.getElementById("body").value;-->
+<!--		document.getElementById("body").value = "";-->
+<!--		let subject = "Website Contact";-->
+<!--		let str = "name: " + name + "\nemail: " + email + "\nmessage: \n" + message;-->
+<!--		Email.send({-->
+<!--			Host: "smtp.elasticemail.com",-->
+<!--			Username: "jaxrules3@gmail.com",-->
+<!--			Password: "C1269DD79026D94D625935FF435AA4D4BEDB",-->
+<!--			To: "jacksonburns2021@gmail.com",-->
+<!--			From: "jaxrules3@gmail.com",-->
+<!--			Subject: subject,-->
+<!--			Body: str-->
+<!--		}).then(-->
+<!--			message => {-->
+<!--				if (message==="OK"){-->
+<!--					alert("message sent successfully")-->
+<!--				} else {-->
+<!--					alert(message)-->
+<!--                }-->
+<!--			}-->
+<!--		).catch(-->
+<!--			error => alert("Error sending email: ", error)-->
+<!--		);-->
 
-	}
-</script>
+<!--	}-->
+<!--</script>-->
 </body>
 </html>

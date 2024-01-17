@@ -9,8 +9,8 @@ function contactMe() {
 	let str = "name: " + name + "\nemail: " + email + "\nmessage: \n" + message;
 	Email.send({
 		Host: "smtp.elasticemail.com",
-		Username: "websitemail@website.dev",
-		Password: "05B19070362DFBDCCEF9C91B055BE85C6C9E",
+		Username: "jackie@maxblowers.dev",
+		Password: "E06250AC6F9B4D584D687813DFF47C48CF22",
 		To: "jacksonburns2021@gmail.com",
 		From: email,
 		Subject: subject,
@@ -20,6 +20,7 @@ function contactMe() {
 	).catch(
 		error => alert("Error sending email: ", error)
 	);
+
 
 }
 
