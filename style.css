@@ -5,7 +5,7 @@
 
 .collapsablebutton{ /*button*/
     cursor: pointer;
-    width:100%;
+    /*width:100%;*/
     text-align:center;
     color: #444;
     background-color:#eee;
@@ -70,10 +70,10 @@ li{
 
 }
 
-.section button{
-    color:black;
+/*.section button{*/
+/*    color:black;*/
 
-}
+/*}*/
 
 
 
