@@ -6,22 +6,27 @@ function contactMe() {
 	let message = document.getElementById("body").value;
 	document.getElementById("body").value = "";
 	let subject = "Website Contact";
-	let str = "name: " + name + "\nemail: " + email + "\nmessage: \n" + message;
+	let str = `Name: ${name} <br/> Email: ${email} <br/> Message: <br/> ${message}`;
 	Email.send({
-		Host: "smtp.elasticemail.com",
-		Username: "jaxrules3@gmail.com",
-		Password: "05B19070362DFBDCCEF9C91B055BE85C6C9E",
+		SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
 		To: "jacksonburns2021@gmail.com",
-		From: email,
+		From: "jakie@maxblowers.dev",
 		Subject: subject,
 		Body: str
 	}).then(
-		message => alert("mail sent successfully")
-	).catch(
-		error => alert("Error sending email: ", error)
-	);
+		message => {
+			if(message==="OK"){
+				alert("Email sent successfully")
+			}
+			else{
+				alert("Error sending message")
+				console.error(message)
+			}
 
+		}
+	)
 }
+
 
 function aboutMe(){
 	let file = "aboutme.txt";
@@ -52,4 +57,4 @@ function collapsible(){
 window.addEventListener("load", myInit, true); function myInit(){
 	collapsible();
 	aboutMe();
-};
+}
