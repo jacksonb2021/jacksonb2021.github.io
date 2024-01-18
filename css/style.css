@@ -3,6 +3,28 @@
     --white: #ffffff;
 }
 
+.collapsablebutton{ /*button*/
+    cursor: pointer;
+    /*width:100%;*/
+    text-align:center;
+    color: #444;
+    background-color:#eee;
+    border-radius:15px;
+    font-size:20px;
+
+}
+.active, .collapsiblebutton:hover {
+    background-color: #ccc;
+}
+
+.collapsablecontent{ /*body*/
+    display:none;
+    overflow:hidden;
+
+}
+
+
+
 .colors{
     background-color: #05668D;
     color: #028090;
@@ -48,10 +70,10 @@ li{
 
 }
 
-.section button{
-    color:black;
+/*.section button{*/
+/*    color:black;*/
 
-}
+/*}*/
 
 
 
