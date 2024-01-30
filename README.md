@@ -1,6 +1,3 @@
-# Title page
+# Jackson Burns Portfolio
 
-
-### My name is jackson burns
-
-just testing github pages
+I made this website to serve as a portfolio for job applications. It showcases my projects, job experience, skills, and information about myself.
