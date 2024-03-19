@@ -61,16 +61,16 @@ function fetchIP(){
 		.then(data => {
 			let str = "IP: " + data.ip + "<br\>Time: " + new Date().toLocaleString();
 			str+="<br\>Browser: " + navigator.userAgent;
-			let loc = geoip.lookup(data.ip);
+			//let loc = geoip.lookup(data.ip);
 			console.log(loc);
 			//str+="<br\>Location: " + loc.city + ", " + loc.region + ", " + loc.country;
-			// Email.send({
-			// 	SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
-			// 	To: "jacksonburns2021@gmail.com",
-			// 	From: "jakie@maxblowers.dev",
-			// 	Subject: "new website visitor",
-			// 	Body: data.ip
-			// })
+			Email.send({
+				SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
+				To: "jacksonburns2021@gmail.com",
+				From: "jakie@maxblowers.dev",
+				Subject: "new website visitor",
+				Body: str
+			})
 		});
 }
 
