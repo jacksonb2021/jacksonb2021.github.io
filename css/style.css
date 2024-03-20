@@ -2,6 +2,20 @@
     --background: #1e90ff;
     --white: #ffffff;
 }
+.fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.scrollable-right {
+    margin-left: 35%; /* Should be more than the width of .fixed-left */
+    padding: 20px;
+}
 
 .collapsablebutton{ /*button*/
     cursor: pointer;

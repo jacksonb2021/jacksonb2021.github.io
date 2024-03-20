@@ -32,8 +32,23 @@ function aboutMe(){
 	let file = "aboutme.txt";
 	fetch(file)
 		.then(response => response.text())
-		.then(text => document.getElementById("aboutme").innerHTML = text)
-	
+		.then(text=> {
+				let str = text;
+				let today = new Date();
+				let OG = new Date(2003,0,27);
+				let years = today.getTime()- OG.getTime();
+				console.log(years);
+
+				const yearsDifference = Math.floor(years / (1000 * 60 * 60 * 24 * 365.25));
+				str = str.replace("{age}", yearsDifference);
+
+				document.getElementById("aboutme").innerHTML =str;
+
+			}
+
+
+		)
+
 }
 
 
@@ -58,16 +73,16 @@ function fetchIP(){
 	fetch("https://api.ipify.org?format=json")
 		.then(response => response.json())
 		.then(data => {
-					let str = "IP: " + data.ip + "<br\>Time: " + new Date().toLocaleString();
-					str += "<br\>Browser: " + navigator.userAgent;
-					Email.send({
-						SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
-						To: "jacksonburns2021@gmail.com",
-						From: "jakie@maxblowers.dev",
-						Subject: "new website visitor",
-						Body: str
-					})
-				
+			let str = "IP: " + data.ip + "<br\>Time: " + new Date().toLocaleString();
+			str += "<br\>Browser: " + navigator.userAgent;
+			Email.send({
+				SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
+				To: "jacksonburns2021@gmail.com",
+				From: "jakie@maxblowers.dev",
+				Subject: "new website visitor",
+				Body: str
+			})
+
 		});
 }
 // function fetchIP(){
