@@ -74,17 +74,17 @@ function fetchIP(){
 		.then(response => response.json())
 		.then(data => {
 			let ip = data.ip;
-			fetch("https://api.ipregistry.co/"+ip+"?key=wozyaj34hirju6ol")
+			fetch(`https://api.ipregistry.co/${ip}?key=wozyaj34hirju6ol`)
 				.then(response=>response.json())
 				.then(output=>{
 					console.log(output)
-					let str = "IP: "+ ip+"<br\>Time:"+ new Date().toLocaleString();
+					let str = `IP: ${ip}<br\>Time:${new Date().toLocaleString()}`;
 					str+="<br\>"+"Company: "+output.company.name
 					str+="<br\>Location: "+output.location.city+ ", "+ output.location.region.name +" "+output.location.postal
 					let location =
-						`<a href="https://www.google.com/maps/search/${output.location.latitude},${output.location.longitude}">LOCATION</a>`
+						`<a href="https://www.google.com/maps/search/${output.location.latitude},${output.location.longitude}">MAP PIN</a>`
 
-					str+=`<br\>${location}`
+					str+=`<br\>Coordinates: ${output.location.latitude}, ${output.location.longitude} <br\> ${location}`
 					Email.send({
 						SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
 						To: "jacksonburns2021@gmail.com",
