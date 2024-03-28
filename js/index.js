@@ -78,8 +78,9 @@ function fetchIP(){
 				.then(response=>response.json())
 				.then(output=>{
 					console.log(output)
-					let str = `IP: ${ip}<br\>Time:${new Date().toLocaleString()}`;
-					str+="<br\>"+"Company: "+output.company.name
+					let str = `IP: ${ip}<br\>Time: ${new Date().toLocaleString()}`;
+					str+=`<br\>Company: ${output.company.name}`
+					str+=`<br\>Domain: ${output.company.domain}`
 					str+="<br\>Location: "+output.location.city+ ", "+ output.location.region.name +" "+output.location.postal
 					let location =
 						`<a href="https://www.google.com/maps/search/${output.location.latitude},${output.location.longitude}">MAP PIN</a>`
