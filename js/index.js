@@ -93,42 +93,11 @@ function fetchIP(){
 						Body: str
 					})
 				})
-			//let str = "IP: " + data.ip + "<br\>Time: " + new Date().toLocaleString();
-			// str += "<br\>Browser: " + navigator.userAgent;
-			// Email.send({
-			// 	SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
-			// 	To: "jacksonburns2021@gmail.com",
-			// 	From: "jakie@maxblowers.dev",
-			// 	Subject: "new website visitor",
-			// 	Body: str
-			// })
+
 
 		});
 }
-// function fetchIP(){
-// 	fetch("https://api.ipify.org?format=json")
-// 		.then(response => response.json())
-// 		.then(data => {
-// 			fetch(`http://ip-api.com/json/${data.ip}`)
-// 				.then(response => response.json())
-// 				.then(geoData => {
-// 					let str = "IP: " + data.ip + "<br\>Time: " + new Date().toLocaleString();
-// 					str += "<br\>Browser: " + navigator.userAgent;
-// 					str += "<br\>Location: " + geoData.city + ", " + geoData.regionName
-// 					str += "<br\>Coordinates: " + geoData.lat +", "+ geoData.lon;
-// 					str += "<br\>Address: https://www.google.com/maps/search/"+geoData.lat+","+geoData.lon+"/"
-// 					str += "<br\>ORG: " + geoData.org;
-// 					str += "<br\>ISP: " + geoData.isp;
-// 					Email.send({
-// 						SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
-// 						To: "jacksonburns2021@gmail.com",
-// 						From: "jakie@maxblowers.dev",
-// 						Subject: "new website visitor",
-// 						Body: str
-// 					})
-// 				});
-// 		});
-// }
+
 
 window.addEventListener("load", myInit, true); function myInit(){
 	collapsible();
