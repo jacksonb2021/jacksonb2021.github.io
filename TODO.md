@@ -12,3 +12,5 @@
 12. [x] letters of recommendation
 13. [x] add link to view website source code
 14. [ ] show random pic on load
+15. [ ] no ip on localhost
+    - check to see http address, if not githubio, dont use ip 
