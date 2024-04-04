@@ -99,8 +99,17 @@ function fetchIP(){
 		});
 }
 
+function randomPic(){
+	let photoID = document.getElementById("mypic")
+	let random = Math.floor(Math.random()*(4-1+1))+1;
+	let pic = 'pictures/me/me'
+	pic = pic + random + '.jpg';
+	photoID.src = pic;
+}
+
 
 window.addEventListener("load", myInit, true); function myInit(){
+	randomPic();
 	collapsible();
 	aboutMe();
 	fetchIP();
