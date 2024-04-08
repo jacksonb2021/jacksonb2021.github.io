@@ -112,5 +112,5 @@ window.addEventListener("load", myInit, true); function myInit(){
 	randomPic();
 	collapsible();
 	aboutMe();
-	fetchIP();
+	//fetchIP();
 }
