@@ -1,0 +1,37 @@
+@font-face {
+    font-family: fortnite;
+    src: url('../fonts/fortnite.otf') format('opentype');
+
+}
+@font-face {
+    font-family: minecraft;
+    src: url('../fonts/Monocraft.otf') format('opentype');
+
+}
+
+button{
+    margin-top:100px;
+}
+
+#counter{
+    font-family: minecraft, "Comic Sans MS", serif;
+    /*font-size:50px;*/
+
+
+}
+
+.box{
+    background-color:rgba(255,255,255,.75);
+    border:5px solid black;
+    border-radius:.5em;
+    display:inline-block;
+}
+
+
+
+body{
+    background-image: url("../fun/max.webp");
+    background-size:100vw 100vh;
+    background-repeat:no-repeat;
+    background-position:top left;
+}
