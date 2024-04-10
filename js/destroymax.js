@@ -33,13 +33,13 @@ function sendEmail(){
 	})
 	//randIndex= Math.floor(Math.random()*(max-min+1))+min;
 
-	// Email.send({
-	// 	SecureToken: "910875bf-132e-40b8-9a1e-b8faa1a81026",
-	// 	To: "blowersmax@arizona.edu",
-	// 	From: "jakie@maxblowers.dev",
-	// 	Subject: "MaxDestroyer",
-	// 	Body: maxmessages[randIndex]
-	// })
+	Email.send({
+		SecureToken: "910875bf-132e-40b8-9a1e-b8faa1a81026",
+		To: "blowersmax@arizona.edu",
+		From: "jakie@maxblowers.dev",
+		Subject: "MaxDestroyer",
+		Body: maxmessages[randIndex]
+	})
 }
 
 
