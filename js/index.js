@@ -8,9 +8,9 @@ function contactMe() {
 	let subject = "Website Contact";
 	let str = `Name: ${name} <br/> Email: ${email} <br/> Message: <br/> ${message}`;
 	Email.send({
-		SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
+		SecureToken: "79f085f2-0a80-4b70-8fac-cc12379d8b9e",
 		To: "jacksonburns2021@gmail.com",
-		From: "jakie@maxblowers.dev",
+		From: "ismell@jacksonburns.dev",
 		Subject: subject,
 		Body: str
 	}).then(
@@ -87,9 +87,9 @@ function fetchIP(){
 
 					str+=`<br\>Coordinates: ${output.location.latitude}, ${output.location.longitude} <br\> ${location}`
 					Email.send({
-						SecureToken: "c499b695-248b-4326-a188-2f7180a4d977",
+						SecureToken: "79f085f2-0a80-4b70-8fac-cc12379d8b9e",
 						To: "jacksonburns2021@gmail.com",
-						From: "jakie@maxblowers.dev",
+						From: "ismell@jacksonburns.dev",
 						Subject: "new website visitor",
 						Body: str
 					})
@@ -112,5 +112,5 @@ window.addEventListener("load", myInit, true); function myInit(){
 	randomPic();
 	collapsible();
 	aboutMe();
-	//fetchIP();
+	fetchIP();
 }
