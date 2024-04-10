@@ -66,12 +66,18 @@ function incrementCounter(){
 
 	counter.innerHTML = getCookie("counter");
 }
-function test(){
-	alert("works")
-}
+
 
 function loadCounter(){
-	document.getElementById("counter").innerHTML=getCookie("counter");
+	let counter = getCookie("counter");
+	let number;
+
+	if(counter===""){
+		number = ""+0;
+	} else{
+		number = counter;
+	}
+	document.getElementById("counter").innerHTML=number;
 }
 
 function resetCounter(){
