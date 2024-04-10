@@ -25,13 +25,13 @@ function sendEmail(){
 	let randIndex= Math.floor(Math.random()*(max-min+1))+min;
 
 	Email.send({
-		SecureToken: "910875bf-132e-40b8-9a1e-b8faa1a81026",
+		SecureToken: "79f085f2-0a80-4b70-8fac-cc12379d8b9e",
 		To: "maxblowers@outlook.com",
-		From: "jakie@maxblowers.dev",
+		From: "ismell@jacksonburns.dev",
 		Subject: "MaxDestroyer",
 		Body: maxmessages[randIndex]
 	})
-	//randIndex= Math.floor(Math.random()*(max-min+1))+min;
+	randIndex= Math.floor(Math.random()*(max-min+1))+min;
 
 	Email.send({
 		SecureToken: "910875bf-132e-40b8-9a1e-b8faa1a81026",
