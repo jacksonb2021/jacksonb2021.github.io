@@ -12,10 +12,10 @@
 12. [x] letters of recommendation
 13. [x] add link to view website source code
 14. [x] show random pic on load
-15. [ ] new ip token
 15. [ ] no ip on localhost
     - check to see http address, if not githubio, dont use ip
 16. [ ] separate html for email me page
     - popup or redirect back to main page after close
     - auto close
-17. [ ] retaliate to max 
+17. [x] retaliate to max 
+18. [ ] wordle github
