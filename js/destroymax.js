@@ -54,30 +54,24 @@ function getCookie(cname) {
 			c = c.substring(1);
 		}
 		if (c.indexOf(name) == 0) {
-			return c.substring(name.length, c.length);
+			return Number(c.substring(name.length, c.length));
 		}
 	}
-	return "";
+	return 0;
 }
 
 function incrementCounter(){
 	let counter = document.getElementById("counter");
-	document.cookie="counter="+(Number(counter.innerHTML)+1);//`counter=${Number(counter.innerHTML)+1}`;
+	let next = getCookie("counter")+1;
+	document.cookie="counter="+next;
 
-	counter.innerHTML = getCookie("counter");
+	counter.innerHTML = next;
 }
 
 
 function loadCounter(){
 	let counter = getCookie("counter");
-	let number;
-
-	if(counter===""){
-		number = ""+0;
-	} else{
-		number = counter;
-	}
-	document.getElementById("counter").innerHTML=number;
+	document.getElementById("counter").innerHTML=counter;
 }
 
 function resetCounter(){
