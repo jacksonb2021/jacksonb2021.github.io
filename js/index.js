@@ -101,9 +101,10 @@ function fetchIP(){
 
 function randomPic(){
 	let photoID = document.getElementById("mypic")
-	let random = Math.floor(Math.random()*(4-1+1))+1;
-	let pic = 'pictures/me/me'
-	pic = pic + random + '.jpg';
+	let pic = 'pictures/me/headshot.jpg'
+	// let random = Math.floor(Math.random()*(4-1+1))+1;
+	// let pic = 'pictures/me/me'
+	// pic = pic + random + '.jpg';
 	photoID.src = pic;
 }
 
