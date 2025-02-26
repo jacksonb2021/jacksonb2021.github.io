@@ -51,6 +51,34 @@ function aboutMe(){
 
 }
 
+function currentJobTime(){
+	let currentDate = new Date();
+	let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	let month = months[currentDate.getMonth()];
+	let year = currentDate.getFullYear();
+	let string = `${month} ${year} (current) <br>`
+	let startDate = new Date("July 22, 2024");
+	console.log(startDate.getDate());
+
+
+	let yearDifference = (currentDate.getFullYear()-startDate.getFullYear() )* 12;
+	console.log(yearDifference)
+
+	let monthDifference = currentDate.getDate()-startDate.getDate();
+	monthDifference = yearDifference-monthDifference;
+	if (monthDifference/12>=1) {
+		yearDifference = Math.floor(monthDifference/12);
+		string += `${yearDifference} year`
+		if(yearDifference!==1){
+			string+='s'
+		}
+
+	}
+
+	string += ` ${(monthDifference%12)} months</p>`;
+	document.getElementById("currentjobtime").innerHTML+=string
+}
+
 
 function collapsible(){
 	let collapsable  = document.getElementsByClassName("collapsablebutton");
@@ -114,4 +142,5 @@ window.addEventListener("load", myInit, true); function myInit(){
 	collapsible();
 	aboutMe();
 	fetchIP();
+	currentJobTime();
 }
