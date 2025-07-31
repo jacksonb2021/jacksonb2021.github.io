@@ -2,347 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackson Burns</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="pictures/mountain_favicon.ico" title="Mountain icons created by Freepik - Flaticon"> <!--https://www.flaticon.com/free-icons/mountain-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="pictures/mountain_favicon.ico" title="Mountain icons created by Freepik - Flaticon">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/new-style.css">
 </head>
-<body class="colors">
+<body>
 
-<div class="container-fluid p-5">
-
+<div class="container-fluid">
     <div class="row">
-        <div class="section col-lg-5 p-5">
+        <!-- Fixed Left Section -->
+        <div class="col-md-3 fixed-left">
+            <div class="p-5">
 
-            <div class="row">
-                <div class="col display-2">
-                    Jackson Burns
+                <div class="row">
+                    <div class="col display-2">
+                        Jackson Burns
+                    </div>
+                    <div class="col-auto">
+                        <img id="mypic" class="border img-fluid img-thumbnail" src="pictures/me.jpg" style="max-width:200px" alt="Jackson Burns">
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <img id="mypic" class="border img-fluid img-thumbnail" src="" style="max-width:200px" alt="Jackson Burns">
 
-                </div>
-
-
+                <h2>Personal Information</h2>
+                <ul id="personal" class="no-display">
+                    <li>Phone: <a href="tel:480-652-1574">(480) 652-1574</a></li>
+                    <li>Email: <a href="mailto:jacksonburns2021@gmail.com">jacksonburns2021@gmail.com</a></li>
+                    <li>
+                        About me:<br>
+                        <div id="aboutme"></div>
+                    </li>
+                    <li>
+                        <div id="mobile-scroll-message">Scroll down to view more</div>
+                    </li>
+                </ul>
             </div>
+        </div>
 
-            <h2 class="text-center" style="margin-top:20px">Personal Information</h2>
+        <!-- Scrollable Right Section -->
+        <div class="col-md-9 scrollable-right p-5">
+            <h2>Professional Experience</h2>
             <hr>
-
-            <ul id="personal" class="no-display">
-
-                <li>Phone: <a href="tel:480-652-1574">(480) 652-1574</a></li>
-                <li>Email: <a href="mailto:jacksonburns2021@gmail.com">jacksonburns2021@gmail.com</a></li>
-                <li>
-                    About me:<br>
-                    <div id="aboutme"></div>
-                </li>
+            <h5>TCI Wealth Advisors (July 2024 - June 2025)</h5>
+            <p><strong>Technical Support Consultant, Tucson, AZ</strong></p>
+            <ul>
+                <li>Administered Active Directory domain, managing user accounts, permissions, and group policies</li>
+                <li>Oversaw and implemented cybersecurity protocols, including email threat monitoring and phishing prevention</li>
+                <li>Traveled between office locations to set up and maintain network infrastructure and firewalls</li>
+                <li>Managed and deployed enterprise software tools, including Salesforce and other domain-integrated systems</li>
+                <li>Provided daily technical support across teams, resolving hardware, software, and network issues</li>
+                <li>Worked directly with vendors to troubleshoot issues, coordinate services, and procure IT equipment and software</li>
             </ul>
 
-
-        </div>
-
-        <div class="section col-lg p-5">
-            <h2 class="text-center m-2">Professional Experience</h2>
-            <hr>
-
-            <div class="row">
-                <div class="col-3">
-                    <h5>TCI Wealth Advisors</h5>
-                    <p>July 2024 - June 2025</p>
-                </div>
-
-
-                <div class="col">
-                    <h6 class="align-content-start">Technical Support Consultant <span class="float-end">Tucson, AZ</span></h6>
-                    <ul>
-                        <li>Administered Active Directory domain, managing user accounts, permissions, and group policies</li>
-                        <li>Oversaw and implemented cybersecurity protocols, including email threat monitoring and phishing prevention</li>
-                        <li>Traveled between office locations to set up and maintain network infrastructure and firewalls</li>
-                        <li>Managed and deployed enterprise software tools, including Salesforce and other domain-integrated systems</li>
-                        <li>Provided daily technical support across teams, resolving hardware, software, and network issues</li>
-                        <li>Worked directly with vendors to troubleshoot issues, coordinate services, and procure IT equipment and software</li>
-                    </ul>
-
-
-                </div>
-
-
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <h5>University of Arizona</h5>
-                    <p>October 2021 - May 2024</p>
-                    <a href="docs/letter-of-rec.pdf">Letter of Recommendation</a>
-                </div>
-
-
-                <div class="col">
-                    <h6 class="align-content-start">Technical Consultant <span class="float-end">Tucson, AZ</span></h6>
-                    <ul>
-                        <li>Provide technical support and troubleshooting assistance to users via phone, chat, and in-person communication</li>
-                        <li>Exhibits strong customer communication skills</li>
-                        <li>Work with a team to solve larger university wide issues</li>
-                        <li>Training new employees on the UA systems and how to deal with software and hardware issues</li>
-                        <li>Efficiently manage time between customers</li>
-                    </ul>
-
-                </div>
-
-
-            </div>
-            <div class="row justify-content-center">
-                <button type="button" class="collapsablebutton btn btn-outline-primary text-center">Additional Jobs</button>
-                <div class="collapsablecontent">
-                    <hr>
-                    <div class="row">
-                        <div class="col-3">
-                            <h5>University of Arizona</h5>
-                            <p>October 2022 - December 2022</p>
-                        </div>
-                        <div class="col">
-                            <h6 class="align-content-start">Lab Assistant<span class="float-end">Tucson, AZ</span></h6>
-                            <ul>
-                                <li>Analyzed soil acidity levels of plants growing outside normal limits</li>
-                                <li>Completed fieldwork to collect plants growing in acidic mine tailings</li>
-                                <li>Measured soil acidity of different mine tailing samples</li>
-                                <li>Grew offspring of plants from tailings</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <h5>Shaunte Jackson</h5>
-                            <p>January 2021 - May 2021</p>
-                        </div>
-                        <div class="col">
-                            <h6 class="align-content-start">Tutor<span class="float-end">Chandler, AZ</span></h6>
-                            <ul>
-                                <li>Proven ability to tailor tutoring sessions to individual student needs, ensuring comprehension and academic improvement</li>
-                                <li>Excellent communication skills to explain complex concepts in a clear and understandable manner</li>
-                                <li>Time management skills to create and follow a structured tutoring schedule</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <!--                    <div class="row">-->
-                    <!--                        <div class="col-3">-->
-                    <!--                            <h5>Doordash, Postmates, Uber Eats</h5>-->
-                    <!--                            <p>August 2020 - August 2021</p>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="col">-->
-                    <!--                            <h6 class="align-content-start">Delivery Driver<span class="float-end">Chandler, AZ</span></h6>-->
-                    <!--                            <ul>-->
-                    <!--                                <li>Consistently met or exceeded delivery targets, ensuring timely and accurate completion of orders</li>-->
-                    <!--                                <li>Excellent customer service skills to ensure customer satisfaction</li>-->
-                    <!--                                <li>Time management skills to create and follow a structured delivery schedule</li>-->
-                    <!--                            </ul>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                </div>
-            </div>
-
-
-
-
-            <h2 class="text-center m-2">Education</h2>
-            <hr>
-            <div class="row">
-                <div class="col-3">
-                    <h5>University of Arizona</h5>
-                    <p>August 2021 - May 2024</p>
-                </div>
-
-
-                <div class="col">
-                    <h6 class= "align-content-start" >Computer Science BS <span class="float-end">Tucson, AZ</span></h6>
-                    <ul>
-                        <li>Accelerated graduation in 3 years</li>
-                        <li>Graduated Magna Cum Laude</li>
-                        <li>GPA: 3.854</li>
-                        <li><a href="docs/transcript.pdf">Transcript</a></li>
-                    </ul>
-
-                </div>
-
-
-
-            </div>
-            <a href="docs/resume_CUR.pdf">Download Resume</a>
-
-
-
-        </div>
-
-
-    </div>
-
-
-    <div class="row">
-
-
-        <div class="col-lg section p-4 no-display">
-            <h2 class="text-center">Projects</h2>
-            <hr>
-            <ul class="no-display">
-                <!--                <li class="h4 m-2">Individual Projects</li>-->
-                <!--                <li>-->
-                <!--                    <ul>-->
-
-                <li class="h5">BigTacToe</li>
-                <li>
-                    <a href="https://jacksonb2021.github.io/BigTacToe">Play Game</a>
-                    <a href="https://github.com/jacksonb2021/BigTacToe">Source Code</a>
-                </li>
-                <li>
-                    A passion project I worked on based off a game I like to play
-                    with friends: Ultimate Tic-Tac-Toe. Still a work in progress, but I
-                    have fun programming it.
-                </li>
-                <li><br></li>
-
-
-                <li class="h5">Song Quotes</li>
-                <li>
-                    <a href="https://github.com/jacksonb2021/SongQuotes/releases">Releases</a>
-                    <a href="https://github.com/jacksonb2021/SongQuotes">Source Code</a>
-
-                </li>
-                <li>
-
-                    Desktop app built with JavaFX to save and manage song quotes from your favorite artists.
-
-                </li>
-                <li><br></li>
-
-                <li class="h5">TCI Client Fee Scheduler</li>
-                <li><a href="https://jacksonb2021.github.io/tci/">Website</a></li>
-                <li><a href="https://github.com/jacksonb2021/tci">Source Code</a></li>
-                <li>
-                    Built for my role at TCI Wealth Advisors, this website calculates the billing schedule for clients
-                    of the firm.
-                </li>
-                <li><br></li>
-
-
-                <li class="h5">C++ BlackJack</li>
-                <li><a href="https://github.com/jacksonb2021/cpp-blackjack">Source Code</a></li>
-                <li>
-                    Built for a Comparative Programming Languages class, the purpose of this program was to be
-                    able to learn a new language and create a program within a small timeframe.
-                    This program lets the user play blackjack as a console game.
-                </li>
-
-
-                <li><br></li>
-                <li class="h5">Movies Graph</li>
-                <li>
-                    <a href="https://jacksonb2021.github.io/Movies-Graph">Website</a>
-                    <a href="https://github.com/jacksonb2021/Movies-Graph">Source Code</a>
-                </li>
-                <li>
-                    This website uses the d3 library to create graph visualizations based on an undirected movie dataset
-
-                </li>
-                <li><br></li>
-
-                <!--                        <li class="h5">Python Scripts</li>-->
-                <!--                        <li><a href="https://github.com/jacksonb2021/PythonScripts">Source Code</a>-->
-                <!--                        </li>-->
-                <!--                        <li>-->
-                <!--                            Random python scripts that I have written to enhance my QOL and workflow. It includes webscrapers,-->
-                <!--                            a diary program and a program to assign metadata to photos with a specific naming scheme.-->
-                <!--                        </li>-->
-                <!--                        <li><br></li>-->
-
-
-
-                <!--                    </ul>-->
-                <!--                </li>-->
-                <!--                <li class="h4 m-2">Group Projects</li>-->
-                <!--                <li>-->
-                <!--                    <ul>-->
-                <li class="h5">Huffman Encoding</li>
-                <li><a href="https://github.com/jacksonb2021/Huffman-Encoding-Java">Source Code</a></li>
-                <li>
-                    This program enables you to encode a string to binary using the huffman encoding algorithm.
-                    This algorithm uses significantly less space than encoding every character as 8 bits.
-                </li>
-                <li><br></li>
-                <li class="h5">C++ BlackJack</li>
-                <li><a href="https://github.com/jacksonb2021/cpp-blackjack">Source Code</a></li>
-                <li>
-                    Built for a Comparative Programming Languages class, the purpose of this program was to be
-                    able to learn a new language and create a program within a small timeframe.
-                    This program lets the user play blackjack as a console game.
-                </li>
-
-                <!--                    </ul>-->
-
-                <!--                </li>-->
-
+            <h5>University of Arizona (October 2021 - May 2024)</h5>
+            <p><strong>Technical Consultant, Tucson, AZ</strong></p>
+            <ul>
+                <li>Provide technical support and troubleshooting assistance to users via phone, chat, and in-person communication</li>
+                <li>Exhibits strong customer communication skills</li>
+                <li>Work with a team to solve larger university wide issues</li>
+                <li>Training new employees on the UA systems and how to deal with software and hardware issues</li>
+                <li>Efficiently manage time between customers</li>
             </ul>
 
+            <h2>Projects</h2>
+            <hr>
+            <ul>
+                <li><strong>BigTacToe</strong> - <a href="https://jacksonb2021.github.io/BigTacToe">Play Game</a> | <a href="https://github.com/jacksonb2021/BigTacToe">Source Code</a><br>
+                    A passion project I worked on based off a game I like to play with friends: Ultimate Tic-Tac-Toe. Still a work in progress, but I have fun programming it.</li>
+
+                <li><strong>Song Quotes</strong> - <a href="https://github.com/jacksonb2021/SongQuotes/releases">Releases</a> | <a href="https://github.com/jacksonb2021/SongQuotes">Source Code</a><br>
+                    Desktop app built with JavaFX to save and manage song quotes from your favorite artists.</li>
+
+                <li><strong>TCI Client Fee Scheduler</strong> - <a href="https://jacksonb2021.github.io/tci/">Website</a> | <a href="https://github.com/jacksonb2021/tci">Source Code</a><br>
+                    Built for my role at TCI Wealth Advisors, this website calculates the billing schedule for clients of the firm.</li>
+
+                <li><strong>C++ BlackJack</strong> - <a href="https://github.com/jacksonb2021/cpp-blackjack">Source Code</a><br>
+                    Built for a Comparative Programming Languages class, the purpose of this program was to be able to learn a new language and create a program within a small timeframe. This program lets the user play blackjack as a console game.</li>
+
+                <li><strong>Movies Graph</strong> - <a href="https://jacksonb2021.github.io/Movies-Graph">Website</a> | <a href="https://github.com/jacksonb2021/Movies-Graph">Source Code</a><br>
+                    This website uses the d3 library to create graph visualizations based on an undirected movie dataset</li>
+
+                <li><strong>Huffman Encoding</strong> - <a href="https://github.com/jacksonb2021/Huffman-Encoding-Java">Source Code</a><br>
+                    This program enables you to encode a string to binary using the huffman encoding algorithm. This algorithm uses significantly less space than encoding every character as 8 bits.</li>
+            </ul>
+
+            <h2>Skills</h2>
+            <hr>
+            <h4>Programming Experience</h4>
+            <ul>
+                <li>Full stack web development utilizing HTML, CSS, JavaScript, and PHP</li>
+                <li>Database management with MySQL</li>
+                <li>Object-oriented programming with Java, C, and Python</li>
+            </ul>
+            <h4>Technical Support</h4>
+            <ul>
+                <li>Experience troubleshooting hardware and software issues</li>
+                <li>Strong customer communication skills</li>
+                <li>Ability to solve most university system issues</li>
+            </ul>
+            <h4>Cloud Computing</h4>
+            <ul>
+                <li>Experience with AWS and EC2 instances</li>
+                <li>Experience with Docker containers</li>
+            </ul>
         </div>
-        <div class="col-lg-4">
-            <div class="section">
-                <h2 class="text-center">Skills</h2>
-                <hr>
-                <h4>Programming Experience</h4>
-                <ul>
-                    <li>Full stack web development utilizing HTML, CSS, JavaScript, and PHP</li>
-                    <li>Database management with MySQL</li>
-                    <li>Object-oriented programming with Java, C, and Python</li>
-                </ul>
-                <h4>Technical Support</h4>
-                <ul>
-                    <li>Experience troubleshooting hardware and software issues</li>
-                    <li>Strong customer communication skills</li>
-                    <li>Ability to solve most university system issues</li>
-                </ul>
-                <h4>Cloud Computing</h4>
-                <ul>
-                    <li>Experience with AWS and EC2 instances</li>
-                    <li>Experience with Docker containers</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h4 class="text-center">Contact Me</h4>
-                <hr>
-                <form id="contactform" onsubmit="contactMe(); return false;">
-                    <p class="text-lg-start m-1">Your Name</p>
-                    <input class="rounded-2 form-control-lg" type="text" id="name" placeholder="Jackson Burns" required>
-                    <br>
-                    <p class="text-lg-start m-1">Your Email</p>
-                    <input class="rounded-2 form-control-lg" type="email" id="email" placeholder="jacksonb2021@gmail.com" required>
-                    <br>
-                    <p class="text-lg-start m-1">Message</p>
-                    <textarea id="body" placeholder="Type your message here" class="rounded-2 form-control-lg btn-primary" rows="6" required></textarea>
-
-                    <br>
-                    <div class="d-flex justify-content-center">
-                        <button class="rounded-3 btn btn-primary" type="submit" >Submit</button>
-                    </div>
-                </form>
-            </div>
-
-
-
-
-        </div>
-
-
     </div>
-    <a class="text-black-50" href="https://github.com/jacksonb2021/jacksonb2021.github.io">Source Code</a>
-    <a class="text-black-50 float-end" href="fun/MaxDestroyer.html">Max</a>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
