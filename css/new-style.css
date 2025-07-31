@@ -76,6 +76,19 @@ a:hover {
     margin-left: -1em;
 }
 
+#mobile-scroll-message {
+    display: none;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #mobile-scroll-message {
+        display: block;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: #121212;
@@ -102,5 +115,8 @@ a:hover {
     }
     h2, h4, h5 {
         color: #66aaff;
+    }
+    #mobile-scroll-message {
+        color: #999;
     }
 }
