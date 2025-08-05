@@ -7,11 +7,13 @@ body {
 .fixed-left {
     background-color: #ffffff;
     border-right: 2px solid #dee2e6;
-    height: 100vh;
+    height: 100dvh; /* Uses dynamic viewport unit */
     position: sticky;
     top: 0;
-    overflow-y: auto;
+    overflow-y: hidden; /* prevent scroll unless really necessary */
 }
+
+
 
 .scrollable-right {
     background-color: #ffffff;
