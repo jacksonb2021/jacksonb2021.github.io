@@ -7,12 +7,11 @@ body {
 .fixed-left {
     background-color: #ffffff;
     border-right: 2px solid #dee2e6;
-    height: 100dvh; /* Uses dynamic viewport unit */
+    height: 100dvh;
     position: sticky;
     top: 0;
-    overflow-y: hidden; /* prevent scroll unless really necessary */
+    overflow-y: hidden;
 }
-
 
 
 .scrollable-right {
@@ -96,28 +95,35 @@ a:hover {
         background: #121212;
         color: #e0e0e0;
     }
+
     .fixed-left {
         background-color: #1e1e1e;
         border-right: 2px solid #333;
         color: #e0e0e0;
     }
+
     .scrollable-right {
         background-color: #1e1e1e;
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.7);
         color: #e0e0e0;
     }
+
     a {
         color: #66aaff;
     }
+
     a:hover {
         text-decoration: underline;
     }
+
     .scrollable-right ul li::before {
         color: #66aaff;
     }
+
     h2, h4, h5 {
         color: #66aaff;
     }
+
     #mobile-scroll-message {
         color: #999;
     }
